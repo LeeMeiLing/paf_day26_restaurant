@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>List of Restaurants</h1>
+        <h1>List of <span data-th-text="${restaurants.get(0).typeOfFood}"></span> Restaurants</h1>
         <br>
         <table class="table-primary">
             <thead>
@@ -20,9 +20,9 @@
                     <th>
                         Address
                     </th>
-                    <!-- <th>
+                    <th>
                         Address Line 2
-                    </th> -->
+                    </th>
                     <th>
                         Rating
                     </th>
@@ -35,9 +35,9 @@
                 <td>
                     <span data-th-text="${r.address}"></span>
                 </td>
-                <!-- <td>
-                    <span data-th-text="${r.\"address line 2\"}"></span>
-                </td> -->
+                <td>
+                    <span data-th-text="${r.addressLine2}"></span>
+                </td>
                 <td>
                     <span data-th-text="${r.rating}"></span>
                 </td>
